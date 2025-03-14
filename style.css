@@ -31,6 +31,10 @@ body {
     color: black;
 }
 
+.nav-links a:hover{
+    color: #e36026;
+}
+
 .hero {
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.502), rgba(0, 0, 0, 0.502)), url('/img/bg-hero.png') no-repeat;
@@ -63,7 +67,6 @@ body {
     font-weight: 400;
 }
 
-
 .btn-primary {
     background: #e36026;
     color: white;
@@ -76,7 +79,6 @@ body {
 
 .meetup-intro {
     text-align: center;
-    padding: 30px 20px;
     font-size: 28px;
     line-height: 1.6;
     padding: 40px 300px 60px 300px;
@@ -174,9 +176,6 @@ body {
     padding-right: 30px;
     vertical-align: top;
 }
-
-
-
 .details-box_3 .register-btn {
     display: block;
     margin: 80px auto 0;
@@ -191,7 +190,6 @@ body {
     text-decoration: none;
     width: fit-content;
 }
-
 .details-box_1 h2,
 .details-box_2 h2 {
     font-size: 40px;
@@ -199,7 +197,6 @@ body {
     line-height: 1.15;
     padding: 0px 50px 30px 50px;
 }
-
 ul.custom-list {
     list-style: none;
     padding: 0px 40px;
@@ -237,7 +234,6 @@ ul.custom-list li strong {
     padding: 0px 40px;
 }
 
-
 .case-study {
     background: #444;
     color: white;
@@ -249,6 +245,7 @@ ul.custom-list li strong {
     display: flex;
     padding: 20px 200px;
 }
+
 .case-study button{
     margin: 90px 0px;
 }
@@ -257,6 +254,7 @@ ul.custom-list li strong {
     font-size: 3em;
     font-weight: 500;
 }
+
 .child-1{
     font-size: 25px;
     font-weight: 300;
@@ -267,7 +265,7 @@ ul.custom-list li strong {
     line-height: 1.5;
 }
 
-.container {/* Dark gray background */
+.container {
     padding: 0px 60px;
     border-radius: 8px;
     text-align: left;
@@ -366,19 +364,48 @@ ul.custom-list li strong {
     color: #e36026;
     font-weight: 600;
 }
-
-
 .logo-div{
     display: flex;
     align-items: flex-end;
     margin-bottom: 40px;
     
 }
-
 .footer h1{
     font-size: 80px;
    font-weight: 1;
     padding: 0 50px;
     margin: 0;
     margin-bottom: -40px;
+}
+
+@media (max-width: 2000px) {
+
+    .navbar {
+        padding: 20px 100px 20px 100px;
+    }
+    .hero {
+        width: 90%;
+    }
+    .meetup-intro{
+        padding: 40px 200px 60px 200px !important;
+    }
+    .details-box_3 {
+        margin-right: -180px !important;
+        height: 60vh !important;
+    }
+    .row_2{
+        height: 60vh !important;
+    }
+    .child-1{
+        padding-right: 100px !important;
+    }
+    .case-div{
+        padding: 20px 50px !important;
+    }
+    .container li{
+        font-size: 23px !important;
+    }
+    .trust-section p{
+        padding: 30px 150px !important;
+    }
 }
